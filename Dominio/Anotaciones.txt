@@ -1,0 +1,122 @@
+Archivo para establecer conclusiones sobre el proyecto.
+
+
+-------------------------------------------------------------------------------
+******************ACTITIVAD****************************************************
+
+Class ACTIVIDAD
+Posee atributos (nombrados a continuacion), se crearan y visualizaran instancias de esa clase (incluyendo las ya precargadas).
+
+Atributos:
+
+-Id (Autogenerado) --> Id = LastId++;
+-Nombre. (No puede estar vacio ni tener mas de 25 caracteres) --> Nombre.Length > 0 && Nombre.Length < 25;
+-Descripcion. (No puede estar vacio) --> Descripcion.Length > 0;
+-Fecha. (La fecha debe ser igual o mayor a la fecha del dia).
+-Cantidad (numero maximo de personas que pueden participar de la actividad).
+-Edad (edad minima con la que se puede acceder a la actividad).
+-Costo (Si no aparece explicitamente se asume que es gratis = 0).
+
+Existen DOS tipos de actividades:
+-Actividad del mismo hotel.
+	Para esto se pide ademas:
+		*Persona encargada de la actividad (funcionario del hotel). VALIDAR QUE NO SEA VACIO.
+		*Lugar dentro del hotel.
+		*Si es al aire libre.
+		-----
+		*Estado de la AGENDA = {PENDIENTE_PAGO, CONFIRMADA}; (Si la actividad es gratuita pasa directamente a CONFIRMAR).
+-Actividades tercerizadas.
+	Para esto se pide ademas:
+		*Proveedor de la misma (Empresa).
+		*Si esta confirmada la actividad por dicha empresa.
+		*Fecha de confirmacion de la actividad.
+		-----
+		*Estado de la AGENDA = {PENDIENTE_PAGO, CONFIRMADA}; (Si la actividad es gratuita pasa directamente a CONFIRMAR).
+
+POSIBLE HERENCIA.
+
+
+			----- Propia
+			|
+Actividad --
+			|
+			----- Tercerizada
+
+Propia es una actividad del propio hotel. Tercerizada seria de un proveedor externo.
+Tanto la actividad propia como la tercerizada heredan de la clase padre: Actividad.
+Tal vez Actividad sea una clase abstracta (Una clase abstracta es una clase que creamos, pero que no tiene instancias, no podemos crear una instancia de actividad, solo de sus hijos, entonces si queremos crear una nueva instancia de Actividad, debemos primero saber que tipo de actividad es, si es tercerizada, creamos la instancia de Tercerizada, si es propia, debemos crear la instancia en Propia.)
+
+********************************Fin Actividad***************************************
+
+
+
+*******************************USUARIO**********************************************
+
+Class USUARIO
+Posee atributos (nombrados a continuacion), se crearan y visualizaran instancias de esa clase (incluyendo las ya precargadas).
+
+Atributos:
+
+-Email. (Se debe validar que contenga un @ y este no este ni al comienzo ni al final).
+-Contraseña. (Debe tener minimo 8 caracteres.) --> Contraseña.Length > 8;
+
+Existen DOS tipos de usuarios:
+-Huesped.
+	*Tipo de documento. {CI, Pasaporte, OTROS};
+	*Numero de documento. (Validar que la cedula sea verdadera segun las reglas REALES de URUGUAY, comprobar que el digito verificador sea valido).
+	*Nombre.
+	*Apellido.
+	*Habitacion. (String, no puede estar vacio).
+	*Fecha de nacimiento.
+	*Nivel de fidelizacion. {1, 2, 3, 4} (No es importante asignarle ese numero a los huespedes en base a alguna tarea del obligatorio, no fijarse en esto).
+-Operario/Proveedor.
+	*Nombre. (Debe ser unico, no puede ser vacio).
+	*Numero telefonico. (No puede ser vacio).
+	*Direccion. (No puede ser vacio).
+
+POSIBLE HERENCIA.
+
+
+			----- Huesped
+			|
+Usuario --
+			|
+			----- Operario
+
+
+TEMA COSTOS:
+Una vez que se valida la disponibilidad de cupos y que el huesped tiene la edad requerida, comienza la logica de los costos.
+Si es una actividad del hotel, se calcula con el nivel de fidelizacion del usuario:
+	Nivel 1 = No hay descuento.
+	Nivel 2 = 10%
+	Nivel 3 = 15%
+	Nivel 4 = 20%
+
+Si es una actividad tercerizada se debe comprobar que este confirmada por el proveedor y se aplica el descuento (Si es que ponemos que hay un descuento, el cual es el mismo para todos).
+
+*******************************Fin USUARIO**********************************************
+
+
+
+
+*******************************AGENDA**************************************************
+
+Class AGENDA
+Posee atributos (nombrados a continuacion), se crearan y visualizaran instancias de esa clase (incluyendo las ya precargadas).
+
+Atributos:
+-Fecha en que se creo la agenda (No de la actividad, de la agenda) --> DateTime.Now
+-Nombre.
+-Apellido.
+-Nombre de la actividad.
+-Fecha (De la ACTIVIDAD).
+-Lugar.
+-Costo. (Si es gratuita poner "Actividad gratuita", sino, el monto.)
+-Estado. (PENDIENTE_PAGO o CONFIRMADA, siempre que sea gratuita, por defecto el estado sera CONFIRMADA).
+-----
+-Nombre del proveedor. (Si es una actividad tercerizada).
+
+*******************************Fin AGENDA**********************************************
+
+
+-------------------------------------------------------------------------------

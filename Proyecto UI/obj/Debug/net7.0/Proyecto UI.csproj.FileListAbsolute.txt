@@ -1,0 +1,36 @@
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.exe
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.deps.json
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.runtimeconfig.json
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Dominio.dll
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Dominio.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\refint\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Obligatorio P2\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\ref\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\refint\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.exe
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.deps.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.runtimeconfig.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Proyecto UI.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Dominio.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\bin\Debug\net7.0\Dominio.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\Proyecto UI.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\Proyecto UI\obj\Debug\net7.0\ref\Proyecto UI.dll
