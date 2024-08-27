@@ -1,0 +1,21 @@
+﻿@using Dominio
+
+
+<form method="post">
+
+    <fieldset>
+        <legend>Establecer valor de promocion para @ViewBag.NombreProv</legend>
+        <input name="idProv" value="@ViewBag.ProvId" hidden />
+        <label>Ingrese valor: </label>
+        <input type="number" name="numDescuento" />
+    </fieldset>
+
+    <br />
+    
+    <input type="submit" value="Aceptar" />
+</form>
+
+@ViewBag.msg
+<br />
+@Html.ActionLink("Regresar", "Index","Proveedor")
+

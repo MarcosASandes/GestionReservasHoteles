@@ -1,0 +1,80 @@
+﻿@using Dominio
+@model IEnumerable<Dominio.Actividad>
+
+<h1>Buscador de actividades</h1>
+<form method="post">
+
+    <label>Seleccione una fecha: </label><br />
+    <input type="date" name="dateActividades" />
+
+    <input type="submit" value="Buscar" />
+</form>
+
+@TempData["msg"]
+
+
+@if(Model.Count() > 0){
+    <table class="table">
+
+        <tr>
+            <th>Id</th> @*Id de la actividad*@
+            <th>Tipo</th> @*{Tercerizada, Propia}*@
+            <th>Nombre</th> @*Nombre de la actividad*@
+            <th>Fecha</th> @*Fecha de la actividad*@
+            <th>Costo</th> @*Costo de la actividad (No de la agenda)*@
+            <th>Cupo</th> @*Cupo disponible (No cantidad maxima)*@
+            <th>Detalles</th> @*Boton de detalles para acceder a la informacion completa.*@
+            @if (Context.Session.GetString("LogueadoRol") == "Huesped" || Context.Session.GetInt32("LogueadoId") == null)
+            {
+                <th>Agendar</th> @*Boton de Agendar, si no esta logueado redirecciona al login.*@
+            }
+        </tr>
+
+        @foreach (Actividad a in Model)
+        {
+            <tr>
+                <td>@a.Id</td>
+                @if (a.GetTipo() == "Propia")
+                {
+                    <td>Propia</td>
+                }
+                else if (a.GetTipo() == "Tercerizada")
+                {
+                    <td>Tercerizada</td>
+                }
+                <td>@a.Nombre</td>
+                <td>@a.Fecha.ToShortDateString()</td>
+                <td>@a.esGratuita()</td>
+                <td>@a.CupoDisponible</td>
+                <td>
+                    @Html.ActionLink("Detalle", "Details", new {id = a.Id})
+                </td>
+
+                @if (Context.Session.GetString("LogueadoRol") == "Huesped" || Context.Session.GetInt32("LogueadoId") == null)
+                {
+                    @if (a.Fecha < DateTime.Now)
+                    {
+                        <td>No disponible.</td>
+                    }
+                    else
+                    {
+                        @if (Context.Session.GetInt32("LogueadoId") == null)
+                        {
+                            <td>@Html.ActionLink("Agendar", "Login","Home")</td>
+                        }
+                        else
+                        {
+                            <td>@Html.ActionLink("Agendar", "Create","Agenda",new {id = a.Id})</td>
+                        }
+                    }
+                }
+
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h2>No se han encontrado actividades.</h2>
+}
+

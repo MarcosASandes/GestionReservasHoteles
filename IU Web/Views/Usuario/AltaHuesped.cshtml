@@ -1,0 +1,89 @@
+﻿@using Dominio
+@model Dominio.Huesped
+
+<h1>Registro de huesped</h1>
+
+<form id="frmAltaSocio" method="post">
+
+    <label>Email: </label>
+    <input type="text" asp-for="Email" id="txtEmail" /><br />
+
+    <label>Password: </label>
+    <input type="password" asp-for="Contrasenia" id="txtPass" /><br />
+
+    <label>Numero de documento: </label>
+    <input type="number" asp-for="NumeroDocumento" id="numDocumento" /><br />
+
+    <select id="slcDoc" asp-for="TipoDocumento">
+        <option value="0">@TipoDoc.Defecto</option>
+        <option value="1">@TipoDoc.CI</option>
+        <option value="2">@TipoDoc.PASAPORTE</option>
+        <option value="3">@TipoDoc.OTROS</option>
+    </select><br />
+
+    <label>Nombre: </label>
+    <input type="text" asp-for="Nombre" id="txtNombre" /><br />
+
+    <label>Apellido: </label>
+    <input type="text" asp-for="Apellido" id="txtApellido" /><br />
+
+    <label>Numero de habitacion: </label>
+    <input type="text" asp-for="Habitacion" id="txtHabitacion" /><br />
+
+    <label>Fecha de nacimiento: </label>
+    <input type="date" asp-for="FechaNacimiento" id="dateFechaNac" /><br />
+    
+
+    <input type="submit" value="Aceptar" />
+</form>
+<p id="pMsg">@ViewBag.msg</p>
+
+
+@*<script>
+
+    document.querySelector("#frmAltaSocio").addEventListener("submit", validarDatos);
+
+    function validarDatos(evento)
+    {
+        evento.preventDefault();
+        let email = document.querySelector("#txtEmail").value;
+        let pass = document.querySelector("#txtPass").value;
+        let numeroDocumento = document.querySelector("#numDocumento").value;
+        let tipoDocumento = document.querySelector("#slcDoc").value;
+        let nombre = document.querySelector("#txtNombre").value;
+        let apellido = document.querySelector("#txtApellido").value;
+        let numeroHabitacion = document.querySelector("#txtHabitacion").value;
+        let fechaNacimiento = document.querySelector("#dateFechaNac").value;
+
+
+        
+        if (email == "") {
+            document.querySelector("#pMsg").innerHTML = "Email invalido.";
+        }
+        else if (pass == "") {
+            document.querySelector("#pMsg").innerHTML = "Password inválida.";
+        }
+        else if (numeroDocumento <= 0) {
+            document.querySelector("#pMsg").innerHTML = "Documento invalido.";
+        }
+
+
+
+        if(nombreCompleto == ""){
+            document.querySelector("#pMsg").innerHTML = "Nombre completo inválido";
+        }
+        else if (fechaNacimiento == null) {
+            document.querySelector("#pMsg").innerHTML = "Fecha de nacimiento inválido";
+        }
+        
+        
+        else{
+            this.submit();
+        }
+
+
+    }
+
+
+
+</script>*@

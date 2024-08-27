@@ -1,0 +1,106 @@
+﻿@using Dominio
+@model IEnumerable<Dominio.Agenda>
+
+
+<h1>Listado de agendas</h1>
+
+@*Listado de agendas por numero de documento y tipo, y por fecha, TODO*@
+@if (Context.Session.GetString("LogueadoRol") == "Operador")
+{ 
+    <form method="post">
+        <fieldset>
+            <legend>Busqueda por documento y tipo.</legend>
+            <label>Numero: </label>
+            <input type="number" name="numDocumento">
+            <br>
+            <select name="slcTipo">
+                <option value="0">@TipoDoc.Defecto</option>
+                <option value="1">@TipoDoc.CI</option>
+                <option value="2">@TipoDoc.PASAPORTE</option>
+                <option value="3">@TipoDoc.OTROS</option>
+            </select>
+        </fieldset>
+       
+        <hr>
+
+        <fieldset>
+            <legend>Busqueda por fecha.</legend>
+            <label>Fecha: </label>
+            <input type="date" name="dateAgenda">
+        </fieldset> <br>
+        <br>
+
+        <input type="checkbox" name="checkUnir" value="true"> <label>Unir filtros</label> <br>
+        <input type="submit" value="Buscar">
+    </form>
+}
+
+<strong>@ViewBag.msg</strong>
+
+@if(Model.Count() > 0)
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Fecha de agenda</th>
+            <th>Huesped</th>
+            <th>Nombre de actividad</th>
+            <th>Fecha de actividad</th>
+            <th>Lugar de actividad</th>
+            <th>Costo</th>
+            <th>Estado</th>
+
+            @if (Context.Session.GetString("LogueadoRol") == "Operador")
+            {
+                <th>Confirmar</th>
+            }
+
+        </tr>
+
+        @foreach (Agenda a in Model)
+        {
+            <tr>
+                <td>@a.Id</td>
+                <td>@a.FechaAgenda</td>
+                <td>@a.HuespedAgenda.Nombre @a.HuespedAgenda.Apellido</td>
+                <td>@a.ActAgenda.Nombre</td>
+                <td>@a.ActAgenda.Fecha.ToShortDateString()</td>
+                @if(a.ActAgenda.GetTipo() == "Propia")
+                {
+                    ActividadPropia aux = a.ActAgenda as ActividadPropia;
+                    <td>@aux.LugarHostal</td>
+                }
+                else if (a.ActAgenda.GetTipo() == "Tercerizada")
+                {
+                    ActividadTercerizada aux = a.ActAgenda as ActividadTercerizada;
+                    <td>Oficinas de @aux.ProveedorActividad.Nombre</td>
+                }
+                @if (a.Costo > 0)
+                {
+                    <td>@a.Costo</td>
+                }
+                else
+                {
+                    <td>Actividad gratuita</td>
+                }
+                <td>@a.Estado</td>
+
+                @if (Context.Session.GetString("LogueadoRol") == "Operador")
+                {
+                    @if (a.Estado == "PENDIENTE_PAGO")
+                    {
+                        <td>@Html.ActionLink("Confirmar", "Confirm","Agenda",new {id = a.Id})</td>
+                    }
+                    else
+                    {
+                        <td> - </td>
+                    }
+                }
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h2>No se han encontrado agendas.</h2>
+}

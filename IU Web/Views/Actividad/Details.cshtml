@@ -1,0 +1,76 @@
+﻿@using Dominio
+@model Dominio.Actividad
+
+
+<h1>Detalle de actividad</h1>
+
+@if(Model.GetTipo() == "Propia")
+{
+    ActividadPropia aux = Model as ActividadPropia;
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Tipo</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Capacidad</th>
+            <th>Cupo disponible</th>
+            <th>Edad minima</th>
+            <th>Responsable</th>
+            <th>Lugar</th>
+            <th>Al aire libre?</th>
+            <th>Costo</th>
+        </tr>
+
+        <tr>
+            <td>@aux.Id</td>
+            <td>Propia</td>
+            <td>@aux.Nombre</td>
+            <td>@aux.Descripcion</td>
+            <td>@aux.Fecha.ToShortDateString()</td>
+            <td>@aux.CantidadMaxima</td>
+            <td>@aux.CupoDisponible</td>
+            <td>@aux.EdadMinima</td>
+            <td>@aux.Responsable</td>
+            <td>@aux.LugarHostal</td>
+            <td>@aux.esAlAireLibre()</td>
+            <td>@aux.esGratuita()</td>
+        </tr>
+    </table>
+}
+else if(Model.GetTipo() == "Tercerizada")
+{
+    ActividadTercerizada auxTerc = Model as ActividadTercerizada;
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Tipo</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+            <th>Capacidad</th>
+            <th>Cupo disponible</th>
+            <th>Edad minima</th>
+            <th>Proveedor</th>
+            <th>Confirmada?</th>
+            <th>Costo</th>
+        </tr>
+
+        <tr>
+            <td>@auxTerc.Id</td>
+            <td>Tercerizada</td>
+            <td>@auxTerc.Nombre</td>
+            <td>@auxTerc.Descripcion</td>
+            <td>@auxTerc.Fecha.ToShortDateString()</td>
+            <td>@auxTerc.CantidadMaxima</td>
+            <td>@auxTerc.CupoDisponible</td>
+            <td>@auxTerc.EdadMinima</td>
+            <td>@auxTerc.ProveedorActividad.Nombre</td>
+            <td>@auxTerc.esConfirmada()</td>
+            <td>@auxTerc.esGratuita()</td>
+        </tr>
+    </table>
+}
+
+@Html.ActionLink("Regresar", "Index")

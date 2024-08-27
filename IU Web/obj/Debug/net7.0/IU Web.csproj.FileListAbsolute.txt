@@ -1,0 +1,34 @@
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\appsettings.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.staticwebassets.runtime.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.exe
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.deps.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.runtimeconfig.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\IU Web.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\Dominio.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\bin\Debug\net7.0\Dominio.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.RazorAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.RazorAssemblyInfo.cs
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets\msbuild.IU Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets\msbuild.build.IU Web.props
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.IU Web.props
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.IU Web.props
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\scopedcss\bundle\IU Web.styles.css
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\scopedcss\projectbundle\IU Web.bundle.scp.css
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\refint\IU Web.dll
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.pdb
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\IU Web.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Obligatorio P2 - Marcos Sandes Gaston Vique\IU Web\obj\Debug\net7.0\ref\IU Web.dll

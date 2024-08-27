@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IU Web.props" />
+</Project>

@@ -1,0 +1,102 @@
+﻿@using Dominio
+
+
+@if(Context.Session.GetString("LogueadoRol") == "Huesped")
+{
+    @model Dominio.Huesped
+
+    <h1>Perfil</h1>
+
+    <table class="table">
+
+        <tr>
+            <th>Rol</th>
+            <td>Huesped</td>
+        </tr>
+
+        <tr>
+            <th>Id</th>
+            <td>@Model.Id</td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+
+        <tr>
+            <th>Nombre</th>
+            <td>@Model.Nombre</td>
+        </tr>
+
+        <tr>
+            <th>Apellido</th>
+            <td>@Model.Apellido</td>
+        </tr>
+
+        <tr>
+            <th>Fecha de nacimiento</th>
+            <td>@Model.FechaNacimiento.ToShortDateString()</td>
+        </tr>
+
+        <tr>
+            <th>Tipo de documento</th>
+            <td>@Model.TipoDocumento</td>
+        </tr>
+
+        <tr>
+            <th>Numero de documento</th>
+            <td>@Model.NumeroDocumento</td>
+        </tr>
+
+        <tr>
+            <th>Habitacion</th>
+            <td>@Model.Habitacion</td>
+        </tr>
+
+        <tr>
+            <th>Nivel de fidelizacion</th>
+            <td>@Model.NivelFidelizacion</td>
+        </tr>
+    </table>
+
+}
+else if (Context.Session.GetString("LogueadoRol") == "Operador")
+{
+    <h1>Perfil</h1>
+
+    <table class="table">
+
+        <tr>
+            <th>Rol</th>
+            <td>Operador</td>
+        </tr>
+
+        <tr>
+            <th>Id</th>
+            <td>@ViewBag.Op.Id</td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td>@ViewBag.Op.Email</td>
+        </tr>
+
+        <tr>
+            <th>Nombre</th>
+            <td>@ViewBag.Op.Nombre</td>
+        </tr>
+
+        <tr>
+            <th>Apellido</th>
+            <td>@ViewBag.Op.Apellido</td>
+        </tr>
+
+        <tr>
+            <th>Fecha de ingreso</th>
+            <td>@ViewBag.Op.FechaInicio.ToShortDateString()</td>
+        </tr>
+    </table>
+}
+
+
